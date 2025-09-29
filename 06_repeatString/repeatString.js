@@ -26,16 +26,16 @@
 //     return repeatedString;
 // }
 
+//Add an else statement to get i < 0 and return an error?
 const repeatString = function(string, num) {
     let repeatedString = "";
     for (let i = 0; i < num; i++) {
-    if (i < num) 
         repeatedString += string;
     }
     return repeatedString;
 }
 
-repeatString('bye', 0)
+repeatString('goodbye', 10)
 
 // Do not edit below this line
 module.exports = repeatString;
