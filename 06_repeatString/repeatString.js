@@ -26,21 +26,20 @@
 //     return repeatedString;
 // }
 
-//Add an else statement to get i < 0 and return an error? But how do I make it so that the return for repeatedString is still tied to the if i < num statement and doesn't end the whole loop?
 const repeatString = function(string, num) {
     let repeatedString = "";
-    for (let i = 0; i < num; i++) {
-        if (i < num) {
-        repeatedString += string;  
-        } else (i < 0) {
-            let error = "ERROR";
+    let error = "ERROR";
+    let i = 0;
+    if (i > num) {
+        return error;
         }
+    for (; i < num; i++) {
+        repeatedString += string;
     }
     return repeatedString;
-    return error;
 }
 
-repeatString('goodbye', 10)
+repeatString('goodbye', -10)
 
 // Do not edit below this line
 module.exports = repeatString;
