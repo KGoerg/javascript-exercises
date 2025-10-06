@@ -1,14 +1,14 @@
-const sumAll = function(firstInt, secondInt) {
+const sumAll = function(firstNum, secondNum) {
 const numbersInRange = [];
 //If the first parameter or second parameter are negative, return "ERROR";
-if (firstInt < 0 || secondInt < 0) {
+if (firstNum < 0 || secondNum < 0) {
     return "ERROR";
 }
-
-    for (let i = firstInt; i <= secondInt; i++){
+// if (Number.isInteger(firstNum || secondNum))
+    for (let i = firstNum; i <= secondNum; i++){
     numbersInRange.push(i);
     }
-    for (let i = firstInt; i >= secondInt; i--){
+    for (let i = firstNum; i >= secondNum; i--){
     numbersInRange.push(i);
     }
 const finalSum = numbersInRange.reduce((accumulator, currentValue) => accumulator + currentValue
