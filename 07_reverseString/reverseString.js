@@ -1,9 +1,8 @@
-const reverseString = function(string) {
-let outputArray = string.split(""); // should generate [h] [e] [l] [l] [o]
-let reversedLettersArray = outputArray.reverse(""); // [should generate [o] [l] [l] [e] [h]
-let reversedWord = reversedLettersArray.join(""); //should concatenate olleh.
-return reversedWord;
-};
-
+function reverseString(string) {
+    const splitString = string.split(""); //Gives us array [h, e, l, l, o]
+    const reverseChars = splitString.reverse(); //Gives us [o, l, l, e, h]
+    const join = reverseChars.join("");
+    return join;
+}
 // Do not edit below this line
 module.exports = reverseString;
