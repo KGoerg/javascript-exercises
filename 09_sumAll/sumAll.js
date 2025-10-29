@@ -5,11 +5,11 @@ function sumAll(num1, num2) {
         arr.push(i);
         }
     }
-    // if (num1) {
-    //     for (let i = num1; i <= num2; i--) {
-    //         arr.push(i);
-    //     }
-    // }
+    if (num1 > num2) {
+        for (let i = num1; i >= num2; i--) {
+            arr.push(i);
+        }
+    }
     return arr.reduce((sum, currentItem) => sum + currentItem);
     };
     
