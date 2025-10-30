@@ -8,7 +8,9 @@ function sumAll(num1, num2) {
         num1 < 0 || 
         num2 < 0 || 
         typeof num1 !== "number" || 
-        typeof num2 !== "number") {
+        typeof num2 !== "number" ||
+        !Number.isInteger(num1) ||
+        !Number.isInteger(num2)) {
         return "ERROR";
     } else
         for (let i = num1; i <= num2; i++) {
