@@ -1,13 +1,12 @@
-const convertToCelsius = function(temp) {
-  const celsiusConversion = (temp - 32) * (5 / 9);
-  //Round result by taking original output multiplied by 10 and rounding to nearest whole number, then dividing by 10 to get a decimal.
-  return rounded = Math.round(celsiusConversion * 10) / 10;
+function convertToCelsius(temp) {
+  const conversion = (temp - 32) * 5/9;
+  return rounded = Math.round(conversion * 10) / 10;
 };
 
-const convertToFahrenheit = function(temp) {
-  const fahrenheitConversion = (temp * (9/5) + 32);
-  return rounded = Math.round(fahrenheitConversion * 10) / 10;
-};
+function convertToFahrenheit(temp) {
+const conversion = (temp * 9/5) + 32;
+return rounded = Math.round(conversion * 10) / 10;
+}
 
 // Do not edit below this line
 module.exports = {
