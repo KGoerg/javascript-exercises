@@ -4,12 +4,14 @@ const palindromes = function (string) {
     .filter((character) => character !== "!" && "." && ",")
     .map((letters) => letters.toLowerCase())
     .join("");
+  console.log(originalString);
     let reverseString = string
     .split("")
     .filter((character) => character !== "!" && "." && ",")
     .map((letters) => letters.toLowerCase())
     .reverse()
     .join("");
+  console.log(reverseString);
 
     if (originalString == reverseString) {
         return true;
