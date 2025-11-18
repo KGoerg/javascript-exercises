@@ -10,12 +10,12 @@ const sum = function(array) {
     return array.reduce((sum, currentValue) => sum + currentValue, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  return array.reduce((total, currentValue) => total * currentValue);
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return base ** exponent;
 };
 
 const factorial = function() {
