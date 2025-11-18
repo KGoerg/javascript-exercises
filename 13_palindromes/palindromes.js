@@ -1,10 +1,17 @@
 const palindromes = function (string) {
-    // let originalString = string
-    // .split("");
-    // // .filter((character) => ["!", ".", ","]);
-    let reverseString = string.split("").reverse().join("");
+    let originalString = string
+    .split("")
+    .filter((character) => character !== "!" && "." && ",")
+    .map((letters) => letters.toLowerCase())
+    .join("");
+    let reverseString = string
+    .split("")
+    .filter((character) => character !== "!" && "." && ",")
+    .map((letters) => letters.toLowerCase())
+    .reverse()
+    .join("");
 
-    if (string === reverseString) {
+    if (originalString == reverseString) {
         return true;
     } else {
         return false;
