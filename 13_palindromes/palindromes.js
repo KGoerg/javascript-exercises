@@ -1,21 +1,18 @@
 const palindromes = function (string) {
     let originalString = string
+    .toLowerCase()
     .replaceAll(" ", "")
     .replace(/\W/g, '')
     .split("")
-    .map((letters) => letters.toLowerCase())
     .join("")
-    .replace(" ", "");
-  console.log(originalString);
+    
     let reverseString = string
+    .toLowerCase()
     .replaceAll(" ", "")
     .replace(/\W/g, '')
     .split("")
-    .map((letters) => letters.toLowerCase())
     .reverse()
     .join("")
-    .replace(" ", "");
-  console.log(reverseString);
 
     if (originalString == reverseString) {
         return true;
