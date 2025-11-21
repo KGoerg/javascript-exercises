@@ -7,7 +7,11 @@ const fibonacci = function(num) {
     num1 = num2;
     num2 = count;
   }
+  if (num === 0) {
+    return 0;
+  } else {
   return num2;
+  }
 };
 
 // Do not edit below this line
