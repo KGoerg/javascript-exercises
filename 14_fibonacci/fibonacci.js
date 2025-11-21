@@ -1,4 +1,5 @@
 const fibonacci = function(num) {
+  num = parseInt(num);
   let num1 = 1;
   let num2 = 1;
   
