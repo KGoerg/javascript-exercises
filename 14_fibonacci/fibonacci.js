@@ -1,20 +1,14 @@
 const fibonacci = function(num) {
-  let num1 = 0;
+  let num1 = 1;
   let num2 = 1;
-  let count;
   
-  if (num === 0) {
-    return num1;
-  } else {
-    for (i = 0; i < num; i++) {
-      count = num1 + num2;
-      num1 = num2;
-    }
-    return count;
+  for (let i = 2; i < num; i++) {
+    let count = num1 + num2;
+    num1 = num2;
+    num2 = count;
   }
+  return num2;
 };
-
-console.log(fibonacci(6))
 
 // Do not edit below this line
 module.exports = fibonacci;
